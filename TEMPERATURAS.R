@@ -1,4 +1,19 @@
+# Curso Programación 2020
+# Creación de funciones
+# Autores: Andrés Bedoya, Emily Restrepo, Salomé Valencia 
 
+# Descripción: Se crearon 6 funciones para convertir valores numéricos entre grados F, C y K. 
+# La función también reconoce si se presentan valores que corresponden a 3 ptos críticos del agua :
+# cero absoluto, pto fusión y pto ebullición 
+
+# Argumentos: x= vector numérico, acepta decimales y negativos
+# Valor: Esta función entrega un data frame con 3 columnas:
+         # 1. x = Valores que fueron usados y que se quieren convertir, los estipula el usuario
+         # 2. fah, cel o kel = La respectiva conversion de x 
+         # 3. r = Entrega 3 valores críticos en caso de que la col 2 presente esos valores
+
+
+# Código: son 6
 # 1. Fahrenheit a Celsius ----
 
 F_to_C <-function(x){
@@ -136,4 +151,7 @@ C_to_K <-function(x){
 }
 
 
-
+# Ejemplo de uso:
+# r1 <-c(-273.15, 0, 100, 54.6, -158.2, -7.1)
+# C_to_F(r1)
+  
