@@ -26,9 +26,9 @@ F_to_C <-function(x){
     if(cel[i]== -273.15) {
       r[i] <-'Cero absoluto'
     } else if(cel[i]== 0){
-      r[i] <-'Pto fusión del agua'
+      r[i] <-'Pto fusion agua'
     } else if(cel[i]== 100){
-      r[i] <-'Pto ebullición del agua'
+      r[i] <-'Pto ebullicion agua'
     } else {r[i] <-'No relevante'}
   }
   data.frame (x, cel, r, stringsAsFactors = FALSE)
@@ -50,9 +50,9 @@ C_to_F <-function(x){
     if(fah[i]== -459.67) {
       r[i] <-'Cero absoluto'
     } else if(fah[i]== 32){
-      r[i] <-'Pto fusión del agua'
+      r[i] <-'Pto fusion agua'
     } else if(fah[i]== 212){
-      r[i] <-'Pto ebullición del agua'
+      r[i] <-'Pto ebullicion agua'
     } else {r[i] <-'No relevante'}
   }
   data.frame (x, fah, r, stringsAsFactors = FALSE)
@@ -72,10 +72,10 @@ F_to_K <-function(x){
   for (i in 1:w) {
     if(kel[i]== 0) {
       r[i] <-'Cero absoluto'
-    } else if(k[i]== 273.15){
-      r[i] <-'Pto fusión del agua'
-    } else if(k[i]== 373.15){
-      result <-'Pto ebullición del agua'
+    } else if(kel[i]== 273.15){
+      r[i] <-'Pto fusion agua'
+    } else if(kel[i]== 373.15){
+      result <-'Pto ebullicion agua'
     } else {r[i] <-'No relevante'}
   }
   data.frame (x, kel, r, stringsAsFactors = FALSE)
@@ -96,9 +96,9 @@ K_to_F <-function(x){
     if(fah[i]== -459.67) {
       r[i] <-'Cero absoluto'
     } else if(fah[i]== 32){
-      r[i] <-'Pto fusión del agua'
+      r[i] <-'Pto fusion agua'
     } else if(fah[i]== 212){
-      r[i] <-'Pto ebullición del agua'
+      r[i] <-'Pto ebullicion agua'
     } else {r[i] <-'No relevante'}
   }
   data.frame(x, fah, r, stringsAsFactors = FALSE) 
@@ -119,9 +119,9 @@ K_to_C <-function(x){
     if(cel[i]== -273.15) {
       r[i] <-'Cero absoluto'
     } else if(cel[i]== 0 ){
-      r[i] <-'Pto fusión del agua'
+      r[i] <-'Pto fusion agua'
     } else if(cel[i]== 100){
-      r[i] <-'Pto ebullición del agua'
+      r[i] <-'Pto ebullicion agua'
     } else {r[i] <-'No relevante'}
   }
   data.frame(x, cel, r, stringsAsFactors = FALSE) 
@@ -142,9 +142,9 @@ C_to_K <-function(x){
     if(kel[i]== 0) {
       r[i] <-'Cero absoluto'
     } else if(kel[i]== 273.15){
-      r[i] <-'Pto fusión del agua'
+      r[i] <-'Pto fusion agua'
     } else if(kel[i]== 373.15){
-      r[i] <-'Pto ebullición del agua'
+      r[i] <-'Pto ebullicion agua'
     } else {r[i] <-'No aplica'}
   }
   data.frame(x, kel, r, stringsAsFactors = FALSE) 
