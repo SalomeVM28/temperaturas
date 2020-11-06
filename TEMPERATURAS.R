@@ -145,7 +145,7 @@ C_to_K <-function(x){
       r[i] <-'Pto fusion agua'
     } else if(kel[i]== 373.15){
       r[i] <-'Pto ebullicion agua'
-    } else {r[i] <-'No aplica'}
+    } else {r[i] <-'No relevante'}
   }
   data.frame(x, kel, r, stringsAsFactors = FALSE) 
 }
